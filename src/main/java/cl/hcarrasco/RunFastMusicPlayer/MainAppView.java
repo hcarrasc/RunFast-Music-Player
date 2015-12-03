@@ -216,7 +216,7 @@ public class MainAppView extends javax.swing.JFrame {
         eTiempo2.setBounds(150, 30, 10, 30);
         jLayeredPane1.add(eTiempo2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        eTiempo1.setFont(new java.awt.Font("LCD", 0, 20));
+        eTiempo1.setFont(new java.awt.Font("Digital-7", 0, 20));
         eTiempo1.setForeground(new java.awt.Color(255, 255, 255));
         eTiempo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         eTiempo1.setText("00 : 00");
