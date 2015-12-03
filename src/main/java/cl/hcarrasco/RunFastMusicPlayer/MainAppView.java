@@ -23,7 +23,7 @@ public class MainAppView extends javax.swing.JFrame {
     public boolean runPause    = true ;
     public boolean repiteTrack = false;
 
-    SystemTrayActions systemTrayActions    = new SystemTrayActions(this);
+    //SystemTrayActions systemTrayActions    = new SystemTrayActions(this);
     DirectoryManager direct = new DirectoryManager();
     Configs cfg  = new Configs();
     File[] nombreTrack = new File[100];
@@ -146,7 +146,7 @@ public class MainAppView extends javax.swing.JFrame {
         verYouTuBe.setFont(new java.awt.Font("Calibri", 0, 14));
         verYouTuBe.setForeground(new java.awt.Color(255, 255, 255));
         verYouTuBe.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        verYouTuBe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Iconytb.png"))); // NOI18N
+        verYouTuBe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Iconytb.png"))); 
         verYouTuBe.setText("Buscar en");
         verYouTuBe.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         verYouTuBe.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -205,7 +205,7 @@ public class MainAppView extends javax.swing.JFrame {
         eTop5.setBounds(200, 430, 90, 20);
         jLayeredPane1.add(eTop5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/4.png"))); // NOI18N
+        ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/4.png"))); 
         ebotonera4.setBounds(20, 420, 280, 50);
         jLayeredPane1.add(ebotonera4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -253,16 +253,16 @@ public class MainAppView extends javax.swing.JFrame {
         jLayeredPane1.add(jComboBox1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         eCaratula.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        eCaratula.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bandejaIcon.png"))); // NOI18N
+        eCaratula.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bandejaIcon.png"))); 
         eCaratula.setBounds(30, 70, 110, 110);
         jLayeredPane1.add(eCaratula, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         eVolumen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        eVolumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Sound - Copy.png"))); // NOI18N
+        eVolumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Sound - Copy.png"))); 
         eVolumen.setBounds(220, 65, 30, 30);
         jLayeredPane1.add(eVolumen, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        proximo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/media-skip-forward.png"))); // NOI18N
+        proximo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/media-skip-forward.png"))); 
         proximo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 proximoMouseClicked(evt);
@@ -271,7 +271,7 @@ public class MainAppView extends javax.swing.JFrame {
         proximo.setBounds(280, 150, 30, 30);
         jLayeredPane1.add(proximo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        anterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/media-skip-backward.png"))); // NOI18N
+        anterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/media-skip-backward.png"))); 
         anterior.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 anteriorMouseClicked(evt);
@@ -280,7 +280,7 @@ public class MainAppView extends javax.swing.JFrame {
         anterior.setBounds(220, 150, 30, 30);
         jLayeredPane1.add(anterior, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        detener.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/player_stop.png"))); // NOI18N
+        detener.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/player_stop.png"))); 
         detener.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 detenerMouseClicked(evt);
@@ -289,7 +289,7 @@ public class MainAppView extends javax.swing.JFrame {
         detener.setBounds(250, 150, 30, 30);
         jLayeredPane1.add(detener, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        repetir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/media-playlist-repeat.png"))); // NOI18N
+        repetir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/media-playlist-repeat.png"))); 
         repetir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 repetirMouseClicked(evt);
@@ -299,12 +299,12 @@ public class MainAppView extends javax.swing.JFrame {
         jLayeredPane1.add(repetir, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         eFondoFrame.setBackground(new java.awt.Color(102, 0, 153));
-        eFondoFrame.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo1.jpg"))); // NOI18N
+        eFondoFrame.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo1.jpg"))); 
         eFondoFrame.setBounds(0, 0, 320, 480);
         jLayeredPane1.add(eFondoFrame, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jSlider1.setBackground(new java.awt.Color(0, 0, 0));
-        jSlider1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jSlider1.setFont(new java.awt.Font("Tahoma", 0, 12)); 
         jSlider1.setForeground(new java.awt.Color(0, 0, 102));
         jSlider1.setOrientation(javax.swing.JSlider.VERTICAL);
         jSlider1.setPaintTicks(true);
@@ -327,9 +327,8 @@ public class MainAppView extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-// <editor-fold defaultstate="collapsed" desc="Metodos Geters">
     public javax.swing.JLabel getFondo() {
         return eFondoFrame;
     }
@@ -352,7 +351,7 @@ public class MainAppView extends javax.swing.JFrame {
 
     public javax.swing.JLabel getTiempoTotal(){
         return eTiempo1;
-    }// </editor-fold>
+    }
     // Metodo que inicializa el JList
     private void initJlist() throws FileNotFoundException{
 
@@ -411,8 +410,7 @@ public class MainAppView extends javax.swing.JFrame {
     // Establece con una imagen inicial la MainAppView de reproductor
     public void initCaratula(){
 
-        ImageIcon iconoOriginal = new ImageIcon(System.getProperty("user.dir")+
-                "/Ilya Soloviev - Universal Universe.jpg");
+        ImageIcon iconoOriginal = new ImageIcon(System.getProperty("user.dir")+"Ilya Soloviev - Universal Universe.jpg");
 
         int ancho = 118;
         int alto =  118;
@@ -436,11 +434,11 @@ public class MainAppView extends javax.swing.JFrame {
         }
     }
 
-    public void cuandoRepite(){
+    public void repeatTrack(){
         play();
     }
 
-    private void eCargarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eCargarMouseClicked
+    private void eCargarMouseClicked(java.awt.event.MouseEvent evt) {
 
         // Declaracion de variables locales
         String path = "";
@@ -461,9 +459,9 @@ public class MainAppView extends javax.swing.JFrame {
         if(returnVal == JFileChooser.CANCEL_OPTION){
                 JOptionPane.showMessageDialog( null, "Necesita Cargar una carpeta que contenga MP3","Mensaje!",
                 JOptionPane.INFORMATION_MESSAGE);
-                path = "X:\\Music";
+                path = "C:\\Users\\3995891\\Music";
         }
-        //path  = "X:\\Music";
+
         File directorio = new File(path);
 
         // Se llamado a metodo registrarArchivo(), quien guardara la ruta del directorio seleccionado
@@ -475,9 +473,9 @@ public class MainAppView extends javax.swing.JFrame {
         // Cargamos el contenido de totalClear a la lista 'jList1'
         jList1.setListData(direct.filtro(grupo,total,c));
 
-    }//GEN-LAST:event_eCargarMouseClicked
+    }
 
-    private void eCargarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eCargarMouseEntered
+    private void eCargarMouseEntered(java.awt.event.MouseEvent evt) {
 
         // dependiendo del idiome que este configurado, se cargara la etiqueta correspondiente
         if(idioma=="español"){
@@ -489,9 +487,9 @@ public class MainAppView extends javax.swing.JFrame {
         if(idioma=="ruso"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/rus1.png")));
         }
-    }//GEN-LAST:event_eCargarMouseEntered
+    }
 
-    private void eCargarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eCargarMouseExited
+    private void eCargarMouseExited(java.awt.event.MouseEvent evt) {
         // dependiendo del idiome que este configurado, se cargara la etiqueta correspondiente
         if(idioma=="español"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/4.png")));
@@ -503,9 +501,9 @@ public class MainAppView extends javax.swing.JFrame {
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/rus4.png")));
         }
     
-    }//GEN-LAST:event_eCargarMouseExited
+    }
 
-    private void eOpcionesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eOpcionesMouseEntered
+    private void eOpcionesMouseEntered(java.awt.event.MouseEvent evt) {
         // dependiendo del idiome que este configurado, se cargara la etiqueta correspondiente
         if(idioma=="español"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/2.png")));
@@ -516,9 +514,9 @@ public class MainAppView extends javax.swing.JFrame {
         if(idioma=="ruso"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/rus2.png")));
         }
-    }//GEN-LAST:event_eOpcionesMouseEntered
+    }
 
-    private void eOpcionesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eOpcionesMouseExited
+    private void eOpcionesMouseExited(java.awt.event.MouseEvent evt) {
         // dependiendo del idiome que este configurado, se cargara la etiqueta correspondiente
         if(idioma=="español"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/4.png")));
@@ -528,18 +526,17 @@ public class MainAppView extends javax.swing.JFrame {
         }
         if(idioma=="ruso"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/rus4.png")));
-        }
-        
-    }//GEN-LAST:event_eOpcionesMouseExited
+        }   
+    }
 
-    private void eOpcionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eOpcionesMouseClicked
+    private void eOpcionesMouseClicked(java.awt.event.MouseEvent evt) {
 
         OptionsView dialog = new OptionsView(new javax.swing.JFrame(), true, this);
         dialog.setVisible(true);
 
-    }//GEN-LAST:event_eOpcionesMouseClicked
+    }
 
-    private void eTop5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eTop5MouseEntered
+    private void eTop5MouseEntered(java.awt.event.MouseEvent evt) {
         // dependiendo del idiome que este configurado, se cargara la etiqueta correspondiente
         if(idioma=="español"){
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/3.png")));
@@ -551,7 +548,7 @@ public class MainAppView extends javax.swing.JFrame {
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/rus3.png")));
         }
          
-    }//GEN-LAST:event_eTop5MouseEntered
+    }
 
     private void eTop5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eTop5MouseExited
         // dependiendo del idiome que este configurado, se cargara la etiqueta correspondiente
@@ -565,42 +562,41 @@ public class MainAppView extends javax.swing.JFrame {
             ebotonera4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/rus4.png")));
         }
         
-    }//GEN-LAST:event_eTop5MouseExited
+    }
 
     private void eTop5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eTop5MouseClicked
         // se crea tipo ventana top 5, el cual hereda desde jDialog y se hace visible
         TopMusicView ventanaTop5 = new TopMusicView(new javax.swing.JFrame(),true, this);
         ventanaTop5.setVisible(true);
 
-    }//GEN-LAST:event_eTop5MouseClicked
+    }
 
-    private void jList1PressTecla(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jList1PressTecla
+    private void jList1PressTecla(java.awt.event.KeyEvent evt) {
         play();
-}//GEN-LAST:event_jList1PressTecla
+    }
 
-    private void jList1PressClick(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList1PressClick
+    private void jList1PressClick(java.awt.event.MouseEvent evt) {
         play();
-}//GEN-LAST:event_jList1PressClick
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    }
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {
 
         indiceVolumen = (float) jComboBox1.getSelectedIndex()/10;
 
-        player.p.getGainControl().setLevel(indiceVolumen);
+        player.p.getGainControl().setLevel(4);
 
         if (jComboBox1.getSelectedIndex()==0){
         eVolumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Mute.png")));
         }
         else eVolumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Sound - Copy.png")));
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }
 
-    private void detenerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_detenerMouseClicked
+    private void detenerMouseClicked(java.awt.event.MouseEvent evt) {
         detener();
-    }//GEN-LAST:event_detenerMouseClicked
+    }
 
-    private void proximoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proximoMouseClicked
+    private void proximoMouseClicked(java.awt.event.MouseEvent evt) {
         siguiente();
-    }//GEN-LAST:event_proximoMouseClicked
+    }
 
     private void anteriorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_anteriorMouseClicked
         anterior();
@@ -654,7 +650,7 @@ public class MainAppView extends javax.swing.JFrame {
         // Se registra en el historial el MP3 a reproducir
         cfg.escribiHistorial(ruta);
         initCaratula(borrador.sustituir(nuevo.getName(),"mp3","", 1));
-        player.p.getGainControl().setLevel(indiceVolumen);
+        player.p.getGainControl().setLevel(4);
         //SystemTrayActions.setTrackName(borrador.sustituir(nuevo.getName(),".mp3","", 1), iconoBandeja);
     }
 
@@ -718,7 +714,7 @@ public class MainAppView extends javax.swing.JFrame {
         cfg.escribiHistorial(ruta);
         // y finalmente el sistema pregunta si existe una caratula en la base de datos para mostrarla
         initCaratula(borrador.sustituir(nuevo.getName(),"mp3","", 1));
-        player.p.getGainControl().setLevel(indiceVolumen);
+        player.p.getGainControl().setLevel(4);
         
     }
 
@@ -761,9 +757,8 @@ public class MainAppView extends javax.swing.JFrame {
          SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 try {
-					SystemTrayActions.GUI();
+					//SystemTrayActions.GUI();
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
             }

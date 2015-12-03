@@ -192,7 +192,7 @@ public class Mp3Manager {
                     slider.setValue(0);
     
                     if(pnt.repiteTrack == true){
-                        pnt.cuandoRepite();
+                        pnt.repeatTrack();
                     }
                 }
                 else{
@@ -202,7 +202,6 @@ public class Mp3Manager {
         };
         temporizador.schedule(tarea,0,1000);
     }
-   
 
     @SuppressWarnings("deprecation")
 	boolean cargar(String ruta, boolean run){
@@ -210,17 +209,14 @@ public class Mp3Manager {
     if(run==true){
         detener();
         segundos = 0;
-        minutos = 0;
-        
+        minutos = 0; 
     }
-    
-    File file = new File(ruta);
-    
+    //File file = new File(ruta);
     try {
             /* Se asigna al objeto Player un administrador de contenidos multimedia 
                y un archivo de tipo mp3 para su procesamiento y reproduccion.
              */
-            p = Manager.createRealizedPlayer(file.toURL());
+            p = Manager.createRealizedPlayer(new File(ruta).toURI().toURL());
 
     // Se atrapan las posibles exceptions o escepciones
     }catch (NoPlayerException ex) {

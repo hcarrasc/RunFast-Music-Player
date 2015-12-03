@@ -14,25 +14,20 @@ public class DirectoryManager {
     
     public static String[] listarDirectorio(File f, String separador, String[] grupo, int c){
 
-                File[] ficheros = f.listFiles();
-           
-                for (int x=0;x<ficheros.length;x++){
-                        //System.out.println(separador + ficheros[x].getPath());                     
-                        contador++;
-                        grupo[contador] = ficheros[x].getPath();
-                        
-
-                        if (ficheros[x].isDirectory()){              
-                                String nuevo_separador;
-                                nuevo_separador = separador + " ";
-                                listarDirectorio(ficheros[x],nuevo_separador, grupo,c);
-                        }
-                }                
-                return grupo;
-        }
-    
+        File[] ficheros = f.listFiles();
+        for (int x=0;x<ficheros.length;x++){
+                //System.out.println(separador + ficheros[x].getPath());                     
+                contador++;
+                grupo[contador] = ficheros[x].getPath();
+                if (ficheros[x].isDirectory()){              
+                        String nuevo_separador;
+                        nuevo_separador = separador + " ";
+                        listarDirectorio(ficheros[x],nuevo_separador, grupo,c);
+                }
+        }                
+        return grupo;
+    }
  
-    
     public  String[] filtro ( String[] grupo, String[] total, int c){
        
          // Se reinicia el contador estatico de la clase

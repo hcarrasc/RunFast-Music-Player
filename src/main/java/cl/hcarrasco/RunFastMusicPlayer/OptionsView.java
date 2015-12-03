@@ -51,9 +51,9 @@ public class OptionsView extends JDialog {
         setTitle("Opciones");
         setResizable(false);
 
-        jLayeredPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Idioma", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(204, 204, 204))); // NOI18N
+        jLayeredPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Idioma", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(204, 204, 204))); 
         jRadioButton6.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton6.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton6.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton6.setText("Español");
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +65,7 @@ public class OptionsView extends JDialog {
         jLayeredPane3.add(jRadioButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioButton7.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton7.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton7.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton7.setText("Inglés");
         jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +76,7 @@ public class OptionsView extends JDialog {
         jRadioButton7.setBounds(10, 40, 180, 25);
         jLayeredPane3.add(jRadioButton7, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jRadioButton8.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton8.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton8.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton8.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton8.setText("Ruso");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -89,20 +89,20 @@ public class OptionsView extends JDialog {
         jLayeredPane3.setBounds(20, 160, 210, 90);
         jLayeredPane1.add(jLayeredPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        nombre.setFont(new java.awt.Font("Calibri", 0, 20)); // NOI18N
+        nombre.setFont(new java.awt.Font("Calibri", 0, 20)); 
         nombre.setForeground(new java.awt.Color(255, 255, 255));
         nombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         nombre.setText("RunFast !!");
         nombre.setBounds(280, 160, 120, 20);
         jLayeredPane1.add(nombre, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bandejaIcon.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/bandejaIcon.png"))); 
         jLabel1.setBounds(250, 50, 160, 150);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLayeredPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Temas Visuales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(204, 204, 204))); // NOI18N
+        jLayeredPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Temas Visuales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(204, 204, 204))); 
 
         jRadioButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton1.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton1.setText("Defecto");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +114,7 @@ public class OptionsView extends JDialog {
         jLayeredPane2.add(jRadioButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton2.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton2.setText("Saturno");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +126,7 @@ public class OptionsView extends JDialog {
         jLayeredPane2.add(jRadioButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton3.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton3.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton3.setText("Giannella");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -138,7 +138,7 @@ public class OptionsView extends JDialog {
         jLayeredPane2.add(jRadioButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton4.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton4.setFont(new java.awt.Font("Calibri", 0, 12)); 
         jRadioButton4.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton4.setText("Flush");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -150,7 +150,7 @@ public class OptionsView extends JDialog {
         jLayeredPane2.add(jRadioButton4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jRadioButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jRadioButton5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jRadioButton5.setFont(new java.awt.Font("Calibri", 0, 12));
         jRadioButton5.setForeground(new java.awt.Color(204, 204, 255));
         jRadioButton5.setText("Auroras");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -164,14 +164,14 @@ public class OptionsView extends JDialog {
         jLayeredPane2.setBounds(20, 60, 210, 90);
         jLayeredPane1.add(jLayeredPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        eOpciones.setFont(new java.awt.Font("Calibri", 0, 19)); // NOI18N
+        eOpciones.setFont(new java.awt.Font("Calibri", 0, 19));
         eOpciones.setForeground(new java.awt.Color(204, 204, 255));
         eOpciones.setText("Opciones:");
         eOpciones.setBounds(30, 20, 140, 20);
         jLayeredPane1.add(eOpciones, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         eSalir.setBackground(new java.awt.Color(51, 51, 51));
-        eSalir.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        eSalir.setFont(new java.awt.Font("Calibri", 1, 14)); 
         eSalir.setForeground(new java.awt.Color(204, 204, 204));
         eSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         eSalir.setText("OK");
@@ -194,7 +194,7 @@ public class OptionsView extends JDialog {
         jSeparator1.setBounds(30, 48, 380, 2);
         jLayeredPane1.add(jSeparator1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        eFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Imagen3.jpg"))); // NOI18N
+        eFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Imagen3.jpg"))); 
         eFondo.setBounds(0, 0, 440, 300);
         jLayeredPane1.add(eFondo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -210,7 +210,7 @@ public class OptionsView extends JDialog {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     public void initElementos() {
         try {
