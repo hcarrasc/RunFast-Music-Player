@@ -17,7 +17,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 public class MainAppView extends javax.swing.JFrame {
 
 	private static final long serialVersionUID = 1L;
-    public float indiceVolumen = (float) 10;
+    public float indiceVolumen = (float) 0.2;
     public int contador        = 0;
     public boolean run         = false;
     public boolean runPause    = true ;
@@ -209,7 +209,7 @@ public class MainAppView extends javax.swing.JFrame {
         ebotonera4.setBounds(20, 420, 280, 50);
         jLayeredPane1.add(ebotonera4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        eTiempo2.setFont(new java.awt.Font("LCD", 0, 20));
+        eTiempo2.setFont(new java.awt.Font("Digital-7", 0, 20));
         eTiempo2.setForeground(new java.awt.Color(255, 255, 255));
         eTiempo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         eTiempo2.setText("-");
@@ -223,7 +223,7 @@ public class MainAppView extends javax.swing.JFrame {
         eTiempo1.setBounds(170, 30, 60, 30);
         jLayeredPane1.add(eTiempo1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        eTiempo.setFont(new java.awt.Font("LCD", 0, 36));
+        eTiempo.setFont(new java.awt.Font("Digital-7", 0, 36));
         eTiempo.setForeground(new java.awt.Color(255, 255, 255));
         eTiempo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         eTiempo.setText("00 : 00");
@@ -410,7 +410,7 @@ public class MainAppView extends javax.swing.JFrame {
     // Establece con una imagen inicial la MainAppView de reproductor
     public void initCaratula(){
 
-        ImageIcon iconoOriginal = new ImageIcon(System.getProperty("user.dir")+"Ilya Soloviev - Universal Universe.jpg");
+        ImageIcon iconoOriginal = new ImageIcon(getClass().getResource("/imagenes/Ilya Soloviev - Universal Universe.jpg"));
 
         int ancho = 118;
         int alto =  118;
@@ -420,14 +420,16 @@ public class MainAppView extends javax.swing.JFrame {
 
     public void initCaratula(String nCaratula){
 
-        ImageIcon iconoOriginal = new ImageIcon(System.getProperty("user.dir")+"/dirCaratulas/"+nCaratula+"jpg");
+        ImageIcon iconoOriginal = new ImageIcon(getClass().getResource("/imagenes/dirCaratulas/"+nCaratula+"jpg"));
         int ancho = 118;
         int alto =  118;
         if (iconoOriginal.getImageLoadStatus() != MediaTracker.COMPLETE) {
             ancho = 130;
             alto =  130;
             iconoOriginal = new ImageIcon(System.getProperty("user.dir")+"/Ilya Soloviev - Universal Universe.jpg");
-            eCaratula.setIcon(new javax.swing.ImageIcon(iconoOriginal.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_DEFAULT)));
+            if (iconoOriginal!=null){
+                eCaratula.setIcon(new javax.swing.ImageIcon(iconoOriginal.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_DEFAULT)));
+            }
         }
         else{
         eCaratula.setIcon(new javax.swing.ImageIcon(iconoOriginal.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_DEFAULT)));
@@ -582,7 +584,7 @@ public class MainAppView extends javax.swing.JFrame {
 
         indiceVolumen = (float) jComboBox1.getSelectedIndex()/10;
 
-        player.p.getGainControl().setLevel(4);
+        //player.p.getGainControl().setLevel(4);
 
         if (jComboBox1.getSelectedIndex()==0){
         eVolumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Mute.png")));
@@ -650,7 +652,7 @@ public class MainAppView extends javax.swing.JFrame {
         // Se registra en el historial el MP3 a reproducir
         cfg.escribiHistorial(ruta);
         initCaratula(borrador.sustituir(nuevo.getName(),"mp3","", 1));
-        player.p.getGainControl().setLevel(4);
+        //player.p.getGainControl().setLevel(4);
         //SystemTrayActions.setTrackName(borrador.sustituir(nuevo.getName(),".mp3","", 1), iconoBandeja);
     }
 
@@ -714,7 +716,7 @@ public class MainAppView extends javax.swing.JFrame {
         cfg.escribiHistorial(ruta);
         // y finalmente el sistema pregunta si existe una caratula en la base de datos para mostrarla
         initCaratula(borrador.sustituir(nuevo.getName(),"mp3","", 1));
-        player.p.getGainControl().setLevel(4);
+        player.p.getGainControl().setLevel(indiceVolumen);
         
     }
 

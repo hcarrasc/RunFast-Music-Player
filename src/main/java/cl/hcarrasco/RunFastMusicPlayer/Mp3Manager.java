@@ -150,13 +150,12 @@ public class Mp3Manager {
     
     void slider( final JSlider slider, final JLabel etiqueta){
         slider.setValue(0);
-        p.getGainControl().setLevel((float) 0.9);
+        //p.getGainControl().setLevel((float) 0.9);
 
         temporizador = new Timer();
         tarea = new TimerTask(){
         boolean reset = true;
             public void run(){
-
 
                 porcentaje = (int) Math.round((p.getMediaTime().getSeconds() * 100)/p.getDuration().getSeconds());
                 float contadorTiempo = (float) p.getMediaTime().getSeconds();
@@ -203,7 +202,6 @@ public class Mp3Manager {
         temporizador.schedule(tarea,0,1000);
     }
 
-    @SuppressWarnings("deprecation")
 	boolean cargar(String ruta, boolean run){
 
     if(run==true){
